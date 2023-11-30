@@ -14,6 +14,7 @@ def run(playwright: Playwright) -> None:
     page.get_by_label("Password").click()
     page.get_by_label("Password").fill("test123")
     page.get_by_test_id("submit").get_by_test_id("buttonElement").click()
+    print("babajaga")
 
     # ---------------------
     context.close()
